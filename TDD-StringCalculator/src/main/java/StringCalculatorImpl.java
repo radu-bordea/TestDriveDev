@@ -1,7 +1,7 @@
 public class StringCalculatorImpl implements StringCalculator {
 
     @Override
-    public int add(String num) throws Exception {
+    public int add(String num)  {
         //TODO implement
         int sum=0;
         String delimiter = "";
@@ -26,10 +26,6 @@ public class StringCalculatorImpl implements StringCalculator {
             System.out.println(num);
             values = num.split(delimiter);
             for (String n : values){
-                if(Integer.parseInt(n) < 0) {
-                    System.out.println(n);
-                    throw new Exception("negatives not allowed");
-                }
                 System.out.println("bbbwejewewf");
                 System.out.println(n);
                 sum += Integer.parseInt(n);

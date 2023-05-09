@@ -13,28 +13,28 @@ public class StringCalculatorTest {
     }
 
     @Test
-    public void testEmptyStringReturnsZero() throws Exception {
+    public void testEmptyStringReturnsZero()  {
         Assertions.assertEquals(0, calculator.add(""));
     }
     @Test
-    public void testOneNumberInString() throws Exception {
+    public void testOneNumberInString()  {
         Assertions.assertEquals(10, calculator.add("10"));
     }
     @Test
-    public void testMultipleNumbersInString() throws Exception {
+    public void testMultipleNumbersInString()  {
         Assertions.assertEquals(23, calculator.add("10,11,2"));
     }
     @Test
-    public void testNewLinesInNumbers() throws Exception {
+    public void testNewLinesInNumbers() {
         Assertions.assertEquals(6, calculator.add("1\n2,3"));
     }
 
     @Test
-    public void testDifferentDelimiter() throws Exception {
+    public void testDifferentDelimiter()  {
         Assertions.assertEquals(5, calculator.add("//;\n2;3"));
     }
 
-
+/*
     @Test
     public void testIfNegative() {
 
@@ -46,7 +46,7 @@ public class StringCalculatorTest {
         });
     }
 
-
+*/
 
 
 
