@@ -34,6 +34,8 @@ public class StringCalculatorTest {
         Assertions.assertEquals(5, calculator.add("//;\n2;3"));
     }
 
+
+
 /*
     @Test
     public void testIfNegative() {

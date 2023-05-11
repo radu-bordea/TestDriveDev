@@ -41,9 +41,6 @@ public class StringCalculatorImpl implements StringCalculator {
             }
         }
 
-
-
-
         return sum;
     }
 
