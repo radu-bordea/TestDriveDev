@@ -1,8 +1,16 @@
 public class StringCalculatorImpl implements StringCalculator {
 
+    Logger dbLogger;
+
+    public StringCalculatorImpl(Logger dbLogger){
+        this.dbLogger = dbLogger;
+    }
+
     @Override
     public int add(String num)  {
         //TODO implement
+
+
         int sum=0;
         String delimiter = "";
         String[] values = null;
@@ -41,7 +49,10 @@ public class StringCalculatorImpl implements StringCalculator {
             }
         }
 
+        if (sum > 1000) dbLogger.log(sum);
         return sum;
+
+
     }
 
 }
